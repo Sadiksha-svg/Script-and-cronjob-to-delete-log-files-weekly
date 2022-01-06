@@ -1,0 +1,1 @@
+find /var/log/apache2 -name '*.log' -mtime +7 -exec rm '{}' \;

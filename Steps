@@ -1,0 +1,25 @@
+Task: Weekly cronjob to delete log files older than 7 days.
+
+Step1
+Check the log path and logs for apache2.
+Command: cd /var/log/apache2/
+ 
+Step 2
+Create the script file named ‘del’ to delete log files older than 7 days.
+
+Step 3
+Set up a cronjob with crontab for weekly execution.
+Command: crontab -e
+Select the editor and add following line in the crontab file.
+0 16 * * 6 /del
+  
+Note: Runs every Saturday at 6 PM to execute ‘del’ script.
+
+
+
+
+
+
+
+ 
+
